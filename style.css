@@ -1,183 +1,181 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #1a1a1a; /* Fundo escuro */
-  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte padrão */
+  margin: 0; /* Remove margens da página */
+  padding: 0; /* Remove padding da página */
+  background-color: #1a1a1a; /* Define cor de fundo escura para a página */
+  color: #ffffff; /* Define a cor do texto como branco */
 }
 
 header {
-  background-color: #313131; /* Fundo escuro do cabeçalho */
-  color: #ffffff;
-  padding: 1.5rem;
-  text-align: center;
-  border-bottom: 2px solid #444;
+  background-color: #313131; /* Define fundo escuro para o cabeçalho */
+  color: #ffffff; /* Define a cor do texto no cabeçalho como branco */
+  padding: 1.5rem; /* Define espaçamento interno (padding) no cabeçalho */
+  text-align: center; /* Centraliza o conteúdo do cabeçalho */
+  border-bottom: 2px solid #444; /* Adiciona uma borda inferior escura */
 }
 
 .logo img {
-  max-width: 60px;
-  vertical-align: middle;
+  max-width: 60px; /* Define o tamanho máximo da imagem do logo */
+  vertical-align: middle; /* Alinha a imagem verticalmente ao meio */
 }
 
 main {
-  background-color: #1a1a1a; /* Fundo escuro do main */
-  padding: 2rem;
-  color: #ffffff;
+  background-color: #1a1a1a; /* Define fundo escuro para o conteúdo principal */
+  padding: 2rem; /* Define espaçamento interno para o conteúdo principal */
+  color: #ffffff; /* Define a cor do texto como branco */
 }
 
 h1 {
-  color: #ffffff; /* Amarelo para destaque */
-  margin: 0;
-  font-size: 2.5rem;
+  color: #ffffff; /* Define a cor do texto principal como branco */
+  margin: 0; /* Remove a margem do título */
+  font-size: 2.5rem; /* Define o tamanho da fonte para o título */
 }
 
 h2, h3 {
-  color: #ffffff; /* Amarelo para destaque em subtítulos */
-  margin: 1rem 0;
+  color: #ffffff; /* Define a cor dos subtítulos como branco */
+  margin: 1rem 0; /* Define a margem superior e inferior dos subtítulos */
 }
 
-
 .gallery {
-  margin: 2rem 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  margin: 2rem 0; /* Adiciona margem vertical na galeria */
+  display: grid; /* Define a exibição da galeria como grid */
+  grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas de largura igual */
+  gap: 1rem; /* Define o espaço entre os itens da galeria */
 }
 
 .gallery figure {
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.3s;
+  text-align: center; /* Centraliza o texto das legendas das imagens */
+  cursor: pointer; /* Adiciona o cursor de ponteiro ao passar sobre as figuras */
+  transition: transform 0.3s; /* Adiciona transição suave para o efeito de transformação */
 }
 
 .gallery figure:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Aumenta levemente a imagem ao passar o mouse sobre ela */
 }
 
 .gallery img {
-  width: 100%;
-  height: auto;
-  border: 3px solid #444; /* Bordas escuras */
-  border-radius: 10px;
+  width: 100%; /* Faz com que a imagem ocupe 100% da largura do contêiner */
+  height: auto; /* Ajusta a altura proporcionalmente à largura */
+  border: 3px solid #444; /* Adiciona borda escura à imagem */
+  border-radius: 10px; /* Arredonda os cantos da imagem */
 }
 
 .gallery figcaption {
-  margin-top: 0.5rem;
-  color: #ffcc00; /* Amarelo para figcaption */
+  margin-top: 0.5rem; /* Adiciona um espaçamento superior à legenda */
+  color: #ffcc00; /* Define a cor das legendas como amarelo */
 }
 
 .curiosities ul {
-  list-style-type: disc;
-  margin: 1rem 0;
-  padding-left: 20px;
-  color: #ffffff;
+  list-style-type: disc; /* Define o estilo da lista como bolinhas */
+  margin: 1rem 0; /* Adiciona margem vertical à lista */
+  padding-left: 20px; /* Adiciona espaçamento à esquerda da lista */
+  color: #ffffff; /* Define a cor do texto na lista como branco */
 }
 
 .curiosities ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem; /* Adiciona margem inferior entre os itens da lista */
 }
 
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9); /* Fundo mais escuro para modal */
-  padding-top: 60px;
+  display: none; /* Inicialmente esconde o modal */
+  position: fixed; /* Posiciona o modal fixo na tela */
+  z-index: 1; /* Define a sobreposição para o modal */
+  left: 0; /* Posiciona o modal na esquerda da tela */
+  top: 0; /* Posiciona o modal no topo da tela */
+  width: 100%; /* Faz com que o modal ocupe 100% da largura */
+  height: 100%; /* Faz com que o modal ocupe 100% da altura */
+  overflow: auto; /* Permite rolagem se o conteúdo for grande */
+  background-color: rgba(0, 0, 0, 0.9); /* Define fundo semi-transparente para o modal */
+  padding-top: 60px; /* Adiciona espaçamento superior ao modal */
 }
 
 .modal-content {
-  background-color: #000000; /* Fundo escuro para conteúdo modal */
-  margin: 5% auto;
-  padding: 2rem;
-  border: 1px solid #888;
-  width: 80%;
-  max-width: 800px;
-  color: #f5f5f5;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  background-color: #000000; /* Define fundo escuro para o conteúdo do modal */
+  margin: 5% auto; /* Centraliza o conteúdo do modal verticalmente e horizontalmente */
+  padding: 2rem; /* Define espaçamento interno para o conteúdo do modal */
+  border: 1px solid #888; /* Adiciona borda ao conteúdo do modal */
+  width: 80%; /* Define a largura máxima do conteúdo do modal */
+  max-width: 800px; /* Define uma largura máxima para o conteúdo */
+  color: #f5f5f5; /* Define a cor do texto no modal como cinza claro */
+  border-radius: 10px; /* Arredonda os cantos do conteúdo do modal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao conteúdo do modal */
 }
 
 .modal img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 1rem;
+  width: 100%; /* Faz com que a imagem do modal ocupe 100% da largura */
+  height: auto; /* Ajusta a altura da imagem proporcionalmente */
+  border-radius: 5px; /* Arredonda os cantos da imagem no modal */
+  margin-bottom: 1rem; /* Adiciona espaçamento inferior à imagem */
 }
 
 .modal .close {
-  color: #ffcc00; /* Amarelo para fechar modal */
-  float: right;
-  font-size: 30px;
-  font-weight: bold;
-  cursor: pointer;
+  color: #ffcc00; /* Define a cor do botão de fechar como amarelo */
+  float: right; /* Posiciona o botão de fechar à direita */
+  font-size: 30px; /* Define o tamanho da fonte do botão de fechar */
+  font-weight: bold; /* Define a fonte em negrito */
+  cursor: pointer; /* Adiciona o cursor de ponteiro ao passar sobre o botão */
 }
 
 .modal .close:hover,
 .modal .close:focus {
-  color: #fff;
-  text-decoration: none;
+  color: #fff; /* Muda a cor do botão ao passar o mouse ou focar nele */
+  text-decoration: none; /* Remove o sublinhado do botão */
 }
 
 footer {
-  background-color: #313131; /* Cor de fundo escura para o footer */
-  color: #ffffff;
-  padding: 20px 0;
-  text-align: center;
+  background-color: #313131; /* Define fundo escuro para o rodapé */
+  color: #ffffff; /* Define a cor do texto no rodapé como branco */
+  padding: 20px 0; /* Define espaçamento interno no rodapé */
+  text-align: center; /* Centraliza o conteúdo do rodapé */
 }
 
 .footer-content {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1200px; /* Define a largura máxima do conteúdo do rodapé */
+  margin: auto; /* Centraliza o conteúdo do rodapé horizontalmente */
 }
 
 .footer-info {
-  margin: 10px;
+  margin: 10px; /* Adiciona espaçamento ao conteúdo do rodapé */
 }
 
 .footer-info p {
-  margin: 5px 0;
+  margin: 5px 0; /* Define a margem dos parágrafos no rodapé */
 }
 
 .footer-info a {
-  color: #ffcc00; /* Amarelo para links */
-  text-decoration: none;
+  color: #ffcc00; /* Define a cor dos links no rodapé como amarelo */
+  text-decoration: none; /* Remove sublinhado dos links */
 }
 
 .footer-info a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Adiciona sublinhado aos links ao passar o mouse */
 }
 
-/* Media Queries for Responsiveness */
-
+/* Media Queries para Responsividade */
 @media (max-width: 768px) {
   .gallery {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr); /* Reduz o layout da galeria para uma coluna em telas menores */
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Diminui o tamanho do título em telas menores */
   }
 
   main {
-    padding: 1rem;
+    padding: 1rem; /* Reduz o espaçamento interno no conteúdo principal */
   }
 }
 
 @media (max-width: 480px) {
   .modal .close {
-    font-size: 24px;
+    font-size: 24px; /* Reduz o tamanho do botão de fechar em telas menores */
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Reduz ainda mais o tamanho do título em telas muito pequenas */
   }
 
   footer {
-    padding: 15px 0;
+    padding: 15px 0; /* Reduz o espaçamento no rodapé em telas menores */
   }
 }
