@@ -182,3 +182,27 @@ footer {
     padding: 15px 0; 
   }
 }
+
+::-webkit-scrollbar {
+    width: 20px;  
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: # #ffcc00; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a; 
+}
+
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ffcc00 #1a1a1a; 
+}
+
+.scrollable {
+    -ms-overflow-style: -ms-autohiding-scrollbar; 
+}
+
